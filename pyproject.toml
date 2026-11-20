@@ -1,0 +1,14 @@
+[project]
+name = "talk-pypi-trusted-publishing"
+version = "0.1.0"
+description = "PyPI Trusted Publishing"
+readme = "README.md"
+# Pin <3.14 for TeX Live's bundled latexminted 0.6.0 (incompatible with Python 3.14 argparse)
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+    "Pygments >= 2.19.2",
+]
